@@ -177,3 +177,23 @@ until (( contador == 5 )); do
     contador=$((contador-1))
 done
 ```
+
+## Creación de funciones
+
+```bash
+function Mensaje()
+{
+    parametro1="$1"
+    parametro2="$2"
+    todos="$@"
+    
+    echo "Aquí el primero en minúsculas: ${parametro1,,}"
+    echo "Aquí el segundo en mayúsculas: ${parametro2^^}"
+    echo "Aquí ${todos,} , o bien, ${todos^}"
+}
+
+Mensaje "UNO" "dos" 
+```
+
+*_Hay que declarar la función antes de llamarla_.
+
