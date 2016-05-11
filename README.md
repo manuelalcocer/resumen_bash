@@ -140,4 +140,40 @@ fi
 
 [Más información sobre operadores aquí](http://mywiki.wooledge.org/BashGuide/TestsAndConditionals#Conditional_Blocks_.28if.2C_test_and_.5B.5B.29)
 
+Para condiciones númericas se usa: _'(( numero1 == numero2 ))'_:
+```bash
+numero1=23
+numero2="44"
 
+if (( numero1 >= numero2 )); then
+    echo "Esto no se ejecutará"
+else
+    echo "Esto sí"
+fi
+```
+
+Nótese que las _variables numéricas_ cuando van entre (( )) no llevan _'$'_.
+
+
+## Sentencias _'while'_ y _'until'_
+
+while [[ condición ]] --> Ejecuta _mientras_ se dé la condición.
+until [[ condición ]] --> Ejecuta _hasta_ que se da la condición.
+
+```bash
+contador=20
+while (( contador > 1 )); do
+    echo "Contador: ${contador} es mayor que 1"
+    # aquí debajo se resta uno a contador
+    ((contador--))
+done
+```
+
+```bash
+contador=20
+until (( contador == 5 )); do
+    echo "Contador no es 5"
+    # aquí debajo se resta uno a contador
+    contador=$((contador-1))
+done
+```
