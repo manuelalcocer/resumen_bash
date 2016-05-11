@@ -4,6 +4,6 @@ Pequeño Resumen BASH
 ## [Shebang](https://es.wikipedia.org/wiki/Shebang)
 
 El _shebang_ correcto es:
-```sh
+```bash
 #!/usr/bin/env bash
 ```
