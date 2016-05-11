@@ -157,8 +157,8 @@ Nótese que las _variables numéricas_ cuando van entre (( )) no llevan _'$'_.
 
 ## Sentencias _'while'_ y _'until'_
 
-while [[ condición ]] --> Ejecuta _mientras_ se dé la condición.
-until [[ condición ]] --> Ejecuta _hasta_ que se da la condición.
+- while [[ condición ]] --> Ejecuta _mientras_ se dé la condición.
+- until [[ condición ]] --> Ejecuta _hasta_ que se da la condición.
 
 ```bash
 contador=20
