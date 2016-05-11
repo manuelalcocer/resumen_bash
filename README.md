@@ -104,16 +104,16 @@ done
 
 La sintaxis es:
 ```bash
-    if [[ condicion1 ]]; then_
-        ejecución si condicion1
-    elif [[ condicion2 ]]; then
-        ejecución si condicion2
-    elif ....
+if [[ condicion1 ]]; then_
+    ejecución si condicion1
+elif [[ condicion2 ]]; then
+    ejecución si condicion2
+elif ....
     ....
     ...
-    else
-        ejecución si nada de lo anterior
-    fi
+else
+    ejecución si nada de lo anterior
+fi
 ```
 Solo son obligatorias las 2 primeras líneas y la úiltima
 
