@@ -104,14 +104,23 @@ done
 
 La sintaxis es:
 >_if [[ condicion1 ]]; then_
+
 >_ejecución si condicion1_
+
 >elif [[ condicion2 ]]; then
+
 >   ejecución si condicion2
+
 >elif ....
+
 >   ....
+
 >   ...
+
 >else
+
 >   ejecución si nada de lo anterior
+
 >_fi_
 
 Solo son obligatorias 3 las líneas resaltadas.
