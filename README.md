@@ -103,27 +103,19 @@ done
 ## Sentencia _'if'_
 
 La sintaxis es:
->_if [[ condicion1 ]]; then_
-
->_ejecución si condicion1_
-
->elif [[ condicion2 ]]; then
-
->   ejecución si condicion2
-
->elif ....
-
->   ....
-
->   ...
-
->else
-
->   ejecución si nada de lo anterior
-
->_fi_
-
-Solo son obligatorias 3 las líneas resaltadas.
+```bash
+    if [[ condicion1 ]]; then_
+        ejecución si condicion1
+    elif [[ condicion2 ]]; then
+        ejecución si condicion2
+    elif ....
+    ....
+    ...
+    else
+        ejecución si nada de lo anterior
+    fi
+```
+Solo son obligatorias las 2 primeras líneas y la úiltima
 
 ```bash
 directorio='/home/maria/'
